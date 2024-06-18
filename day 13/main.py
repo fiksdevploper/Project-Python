@@ -1,3 +1,4 @@
+# membuat projet tebak angka menggunakan algoritma python 
 import heapq
 
 class Node:

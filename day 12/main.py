@@ -1,3 +1,4 @@
+# membuat game algoritma hangman menggunakan bahasa pemerograman python
 import random 
 
 def get_random_word(word_list):
