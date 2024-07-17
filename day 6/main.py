@@ -1,4 +1,4 @@
-# project penghiyung kalori makanan menggunakan bahasa pemerograman python
+# project penghitung kalori makanan menggunakan bahasa pemerograman python
 
 kalori_makanan = {
     "ayam" : 100,

@@ -3,12 +3,12 @@
 catatan = {}
 
 def tambah_catatan():
-    tanggal = input("Masukkan tanggal (YYYY-MM-DD): ")
+    tanggal = input("Masukkan tanggal (DD-MM-YYYY): ")
     catatan[tanggal] = input("Masukkan catatan Anda: ")
     print("Catatan berhasil ditambahkan!")
 
 def lihat_catatan():
-    tanggal = input("Masukkan tanggal (YYYY-MM-DD): ")
+    tanggal = input("Masukkan tanggal (DD-MM-YYYY): ")
     if tanggal in catatan:
         print("Catatan Anda pada", tanggal, ":", catatan[tanggal])
     else:
