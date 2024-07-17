@@ -17,7 +17,7 @@ def lihat_tugas():
 # hapus tugas pada daftar
 def hapus_tugas():
     lihat_tugas()
-    nomor = int(input("Masukkan nomor tugas yang ingin di hapus: "))
+    nomor = int(input("Masukkan nomor pembelajaran yang ingin di hapus: "))
     if 0 < nomor <= len(tugas):
         tugas.pop(nomor - 1)
         print("Tugas telah di hapus.")

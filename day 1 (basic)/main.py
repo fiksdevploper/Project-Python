@@ -30,6 +30,7 @@ if konfirmasi_pengguna == "ya":
 # dan, jika user memilih "Tidak" maka user akan mengulang input lubang others
 else:
     pilihan_pengguna = int(input("Coba tebak lagi kamu hanya memiliki 1 kesempatan lagi , di mana otherspy berada [1,2,3,4,5] ? "))
+
 # logic
 # jika pilihan pengguna benar
 if pilihan_pengguna == otherspy_posisi:
