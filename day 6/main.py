@@ -1,5 +1,5 @@
 # project penghitung kalori makanan menggunakan bahasa pemerograman python
-
+# daftar kalori setiap makanan
 kalori_makanan = {
     "ayam" : 100,
     "gandum" : 150,
@@ -27,7 +27,7 @@ kalori_makanan = {
     "untak" : 900,
     "telur bebek" : 900
 }
-
+# total kalori 
 total_kalori = 0
 
 def tambah_makanan():

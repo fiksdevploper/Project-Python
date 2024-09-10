@@ -1,11 +1,13 @@
 # project To-do list menggunakan bahasa pemerograman Python
 
 tugas = []
+
 # tugas di tambahkan
 def tambah_tugas():
     tugas_baru = input("Masukkan tugas baru: ")
     tugas.append(tugas_baru)
     print("Tugas baru telah ditambahkan.")
+    
 # lihat tugas pada daftar
 def lihat_tugas():
     if tugas:
@@ -14,6 +16,17 @@ def lihat_tugas():
             print(f"{i}. {t}")
     else:
         print("Tidak ada tugas yang di tambahkan. ")
+        
+# edit tugas pada daftar
+def edit_tugas():
+    nomor = int(input("Masukkan nomor tugas yang ingin diedit: "))
+    if 0 < nomor <= len(tugas):
+        tugas_baru = input("Masukkan tugas baru: ")
+        tugas[nomor - 1] = tugas_baru
+        print("Tugas telah diedit.")
+    else:
+        print("Tugas tidak ditemukan.")
+
 # hapus tugas pada daftar
 def hapus_tugas():
     lihat_tugas()
@@ -30,7 +43,8 @@ while True:
     print("1. Tambah Tugas")
     print("2. Lihat Tugas")
     print("3. Hapus Tugas")
-    print("4. Keluar")
+    print("4. Edit Tugas")
+    print("5. Keluar")
     pilihan = input("Pilih menu (1/2/3/4): ")
     
     if pilihan == "1":
@@ -40,7 +54,9 @@ while True:
     elif pilihan == "3":
         hapus_tugas()
     elif pilihan == "4":
-        break
+        edit_tugas()
+    elif pilihan == "5":
+        break 
     else:
         print("Pilihan tidak valid. ")
 # code end
